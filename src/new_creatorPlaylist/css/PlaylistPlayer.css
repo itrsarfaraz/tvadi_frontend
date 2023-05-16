@@ -1,0 +1,366 @@
+.creator_PlaylistPlayer {
+  display: flex;
+  flex-direction: row;
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 0.25rem;
+  overflow: hidden;
+}
+
+.creator_PlaylistPlayer__main {
+  width: 75%;
+}
+
+.creator_PlaylistPlayer__sidebar {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+}
+
+.creator_PlaylistPlayer__player-wrapper {
+  position: relative;
+  padding-top: 56.25%;
+  border: 5px solid transparent;
+  border-image: url(../../asset/images/PlayerBoarderl.png) 30 round;
+  /* Player ratio: 100 / (1280 / 720) */
+}
+
+.creator_PlaylistPlayer__player-wrapper .inroDiv {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.creator_PlaylistPlayer__player-wrapper .inroDiv button {
+  margin: 130px 0 0 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.creator_PlaylistPlayer__player-wrapper .inroDiv button:nth-child(1) {
+  transition: 0.5s;
+}
+
+.creator_PlaylistPlayer__player-wrapper .inroDiv button:nth-child(2) {
+  transition: 1s;
+}
+
+.creator_PlaylistPlayer__player-wrapper:hover .inroDiv {
+  opacity: 1;
+  visibility: visible;
+}
+
+.creator_PlaylistPlayer__player-wrapper:hover .inroDiv button {
+  margin: 0;
+  visibility: visible;
+  opacity: 1;
+}
+
+.creator_PlaylistPlayer__player {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.creator_PlaylistPlayer__infobar {
+  display: flex;
+  flex-direction: row;
+}
+
+.creator_PlaylistPlayer__main .creator_PlaylistPlayer__reserved {
+  width: 65%;
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.creator_PlaylistPlayer__sidebar .creator_PlaylistPlayer__reserved {
+  flex: 1;
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.creator_PlaylistPlayer__badge {
+  width: 35%;
+  padding: 0.5rem;
+}
+
+.creator_PlaylistPlayer__playlists {
+  white-space: nowrap;
+  height: 28rem;
+  overflow-y: auto;
+}
+
+
+
+.creator_PlaylistPlayer__playlists {
+  overflow-x: hidden;
+}
+
+.creator_PlaylistPlayer__menu {
+  height: 25rem;
+  overflow-y: auto;
+  border-radius: 0;
+}
+
+
+
+.creator_PlaylistPlayer__menu::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.creator_PlaylistPlayer__menu::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+.creator_PlaylistPlayer__menu::-webkit-scrollbar-thumb {
+  background: #8d20bb;
+}
+
+/* Handle on hover */
+.creator_PlaylistPlayer__menu::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+
+
+
+
+
+
+
+.creator_PlaylistPlayer__playlists::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.creator_PlaylistPlayer__playlists::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+.creator_PlaylistPlayer__playlists::-webkit-scrollbar-thumb {
+  background: #8d20bb;
+}
+
+/* Handle on hover */
+.creator_PlaylistPlayer__playlists::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+
+
+
+
+.creator_PlaylistPlayer__logo {
+  padding: 0.5rem;
+}
+
+.creator_PlaylistPlayer__logo img {
+  width: 100%;
+}
+
+.creator_VideoBadge {
+  display: flex;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.playlistEdit .creator_VideoBadge {
+  border-bottom: 3px solid transparent;
+  border-image: url(../../asset/images/RowBreak.png) 15 round;
+}
+
+.creator_VideoBadge:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+
+.userUploadVideo .creator_VideoBadge {
+  padding-left: 28px;
+}
+
+.creator_VideoBadge .creator_VideoBadge__info .info {
+  width: 100%;
+  overflow: auto;
+}
+
+.creator_VideoBadge .creator_VideoBadge__info .info::-webkit-scrollbar {
+  /* display: none; */
+}
+
+.userUploadVideo .creator_VideoBadge .creator_VideoBadge__info .info {
+  width: 100%;
+}
+
+.creator_VideoBadge--clickable {
+  cursor: pointer;
+}
+
+.creator_VideoBadge--clickable:hover {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.creator_VideoBadge--active,
+.creator_VideoBadge--active:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.creator_VideoBadge__logo {
+  flex-shrink: 0;
+  width: 5.8rem;
+  height: 5.9rem;
+  background-size: cover;
+  background-position: center;
+}
+
+.creator_VideoBadge__info {
+  overflow: hidden;
+}
+
+.creator_VideoBadge__title {
+  font-weight: 600;
+}
+
+.creator_PlaylistButton {
+  padding: 0.2rem;
+  background: rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  font-weight: 600;
+  height: 100%;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.creator_PlaylistButton::-webkit-scrollbar {
+  /* display: none; */
+}
+
+.creator_PlaylistButton:hover {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.creator_PlaylistButton--active,
+.creator_PlaylistButton--active:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+
+
+/* loader */
+
+
+.main_loader_box {
+  height: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.loader {
+  width: 100%;
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.loader span {
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  border-radius: 50%;
+  margin: 0 4px;
+  opacity: 0;
+  animation: loader 3s ease-in-out infinite;
+}
+
+@keyframes loader {
+  0% {
+    transform: translateX(-700px);
+    opacity: 0;
+  }
+
+  30%,
+  60% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateX(700px);
+    opacity: 0;
+  }
+}
+
+.loader span:nth-child(1) {
+  animation-delay: 0.75s;
+}
+
+.loader span:nth-child(2) {
+  animation-delay: 0.6s;
+}
+
+.loader span:nth-child(3) {
+  animation-delay: 0.45s;
+}
+
+.loader span:nth-child(4) {
+  animation-delay: 0.3s;
+}
+
+.loader span:nth-child(5) {
+  animation-delay: 0.15s;
+}
+
+/* Loader End  */
+
+.addListButton {
+  /* width: 22%; */
+}
+
+.playerWrapperEmpty {
+  position: absolute;
+  top: 10%;
+  left: 26%;
+}
+
+@media only screen and (max-width:992px) {
+  .playerWrapperEmpty {
+    top: 7%;
+    left: 15%;
+  }
+}
+
+.marquee {
+  width: -webkit-fill-available;
+}
+
+.makeStyles-container-1 {
+  padding: 0 !important;
+}
+
+.modal-backdrop {
+  z-index: -1;
+}
+
+.playBtn {
+  width: 15%;
+}
+
+@media(max-width:768px) {
+  .playBtn {
+    width: 8%;
+  }
+}
+
+.rdt_Table,
+.rdt_TableHeader,
+.rdt_TableRow,
+.rdt_TableHeadRow,
+.rdt_Pagination {
+  color: #fff !important;
+  background-color: transparent !important;
+}
+
+.bzRnkJ {
+  background-color: transparent !important;
+  color: #fff !important;
+}
+.select-type{
+  background-color: #7B5DA7!important;
+}

@@ -1,0 +1,137 @@
+$spacing: 0.5rem;
+$border-radius: 0.25rem;
+$background: rgba(black, 0.05);
+
+.PlaylistPlayer {
+  display: flex;
+  flex-direction: row;
+  background: $background;
+  border-radius: $border-radius;
+  overflow: hidden;
+
+  &__main {
+    width: 75%;
+  }
+
+  &__sidebar {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__player-wrapper {
+    position: relative;
+    padding-top: 56.25% /* Player ratio: 100 / (1280 / 720) */
+  }
+
+  &__player {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  &__infobar {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__main &__reserved {
+    width: 65%;
+    background: $background;
+  }
+
+  &__sidebar &__reserved {
+    flex: 1;
+    background: $background;
+  }
+
+  &__badge {
+    width: 35%;
+    padding: $spacing;
+  }
+
+  &__playlists {
+    padding: $spacing;
+    white-space: nowrap;
+    overflow-x: auto;
+  }
+
+  &__menu {
+    padding: $spacing;
+    height: 14rem;
+    overflow-y: auto;
+  }
+
+  &__logo {
+    padding: $spacing;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.VideoBadge {
+  display: flex;
+  align-items: center;
+  padding: $spacing;
+  border-radius: $border-radius;
+  background: $background;
+
+  &:not(:last-child) {
+    margin-bottom: $spacing;
+  }
+
+  &--clickable {
+    cursor: pointer;
+
+    &:hover {
+      background: rgba(black, 0.1);
+    }
+  }
+
+  &--active,
+  &--active:hover {
+    background: rgba(black, 0.15);
+  }
+
+  &__logo {
+    flex-shrink: 0;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 2.5rem;
+    background-size: cover;
+    background-position: center;
+    margin-right: $spacing;
+  }
+
+  &__info {
+    overflow: hidden;
+  }
+
+  &__title {
+    font-weight: 600;
+  }
+}
+
+.PlaylistButton {
+  display: inline-block;
+  padding: $spacing;
+  border-radius: $border-radius;
+  background: $background;
+  cursor: pointer;
+  font-weight: 600;
+
+  &:not(:last-child) {
+    margin-right: $spacing;
+  }
+
+  &:hover {
+    background: rgba(black, 0.1);
+  }
+
+  &--active,
+  &--active:hover {
+    background: rgba(black, 0.15);
+  }
+}

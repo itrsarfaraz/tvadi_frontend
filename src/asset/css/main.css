@@ -1,0 +1,719 @@
+@font-face {
+    font-family: AstroSpace;
+    src: url(../font/AstroSpace-eZ2Bg.ttf);
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(../font/Roboto-Regular.woff);
+    font-display: swap;
+}
+
+.main-container {
+    font-family: Roboto, "aAstroSpace";
+    position: static;
+    /* background-color: rgba(0, 0, 0, 0.4); */
+    height: 100vh;
+    /* margin: -130px auto 0 auto; */
+    z-index: 99;
+
+}
+
+.astroSpace {
+    font-family: AstroSpace, "aAstroSpace" !important;
+}
+
+.css-1g7fu7m-MuiContainer-root {
+    padding-top: unset;
+    /* margin-top: 25px; */
+}
+
+/* form - Sign Up */
+.main-container .card_box {
+    position: relative;
+    display: block;
+    width: 400px;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.5);
+    border: 5px solid transparent;
+    border-image: url(../images/PlayerBoarderl.png) 30 round;
+    margin: 10px auto 200px auto;
+}
+
+.main-container .login {
+    margin: 10px auto 350px auto;
+}
+
+.main-container .contact {
+    width: 70%;
+}
+
+@media(max-width:768px) {
+    .main-container .contact {
+        width: 90%;
+    }
+
+    .setHeigthofScroller {
+        height: 10rem !important;
+    }
+
+}
+
+@media only screen and (max-width:450px) {
+    .main-container .card_box {
+        width: 330px;
+    }
+
+    .setHeigthofScroller {
+        height: 10rem !important;
+    }
+}
+
+.setHeigthofScroller {
+    height: 25rem;
+    overflow: scroll;
+}
+
+@media only screen and (max-width:340px) {
+    .main-container .card_box {
+        width: 270px;
+    }
+}
+
+.main-container .card_box h3,
+h1 {
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 5px 0;
+}
+
+.main-container .card_box p {
+    color: #fff;
+    text-align: center;
+
+}
+
+.main-container .card_box form {
+    padding: 10px 0;
+}
+
+.main-container .card_box .form-Group input,
+.main-container .card_box .form-Group textarea {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    outline: none;
+    border: 2px solid #8103E4;
+    padding: 6px;
+}
+
+.main-container .card_box .form-Group label {
+    display: block;
+    color: #fff;
+    margin: 10px auto 0 auto;
+    padding: 0 7px;
+    width: 75%;
+    font-weight: 600;
+}
+
+.main-container .card_box .form-Group .inputError {
+    color: #fff;
+    font-size: 12px;
+    display: block;
+    width: 75%;
+    margin: 5px auto 0 auto;
+    padding: 0;
+}
+
+.main-container .card_box Button {
+    background-color: #001B5B;
+    display: block;
+    margin: 15px auto;
+    width: 75%;
+    color: #fff;
+    text-transform: uppercase;
+    border: 2px solid #8103E4;
+    border-radius: 0px;
+}
+
+.main-container .card_box .link {
+    text-decoration: none;
+}
+
+.main-container .login .divider-or {
+    position: relative;
+    display: block;
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    margin: 0 auto;
+    color: #fff;
+}
+
+.main-container .login .divider-or::before,
+.main-container .login .divider-or::after {
+    content: '';
+    position: absolute;
+    background-color: #8103E4;
+    top: 50%;
+    width: 40%;
+    height: 2px;
+}
+
+.main-container .login .divider-or::before {
+    left: 0;
+}
+
+.main-container .login .divider-or::after {
+    right: 0;
+}
+
+
+/*  eroor page */
+
+.main-container .error {
+    height: 200px;
+}
+
+.main-container .error h1 {
+    text-align: center;
+    color: #fff;
+    font-size: 100px;
+}
+
+.main-container .error p {
+    color: #fff;
+    text-align: center;
+}
+
+/*  home page css */
+
+
+.transparent {
+    background-color: transparent;
+}
+
+.sideVideos {
+    background: rgba(0, 0, 0, 0.2);
+    padding: 0 !important;
+    padding-bottom: 30px !important;
+}
+
+.sideVideos .sideVideosHeading {
+    background-color: transparent;
+    border-radius: 0;
+    color: #fff;
+    font-weight: bold;
+    text-Transform: uppercase;
+    border-bottom: 1px solid rgba(225, 215, 215, 0.562);
+    /* border-image: url(../images/home/rowBreak.png) 150; */
+    padding: 3px 0 0 0;
+}
+
+.sideVideos .videoItem {
+    border-radius: 0;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.sideVideos .videoItem .aboutVideo {
+    position: absolute;
+    width: 100%;
+    text-align: left;
+    color: #fff;
+    font-size: 18px;
+    left: 0;
+    top: 0;
+    border-radius: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 0 !important;
+    border: none;
+}
+
+.sideVideos .videoItem .aboutVideo img {
+    width: 10%;
+    margin: 0 5px;
+}
+
+.sideVideos .videoItem .videoImg {
+    border-radius: 0;
+}
+
+.sideVideos .videoItem .videoImg img {
+    /* height: 100px; */
+    width: 100%;
+}
+
+.sideVideos .videoItem .videoDesc {
+    border-radius: 0;
+    background-color: #000;
+    color: #fff;
+    text-align: left;
+}
+
+.displayVideoBox {
+    background-color: transparent;
+    border-radius: 0;
+    padding: 0 15px;
+}
+
+.displayVideoBox .displayVideo {
+    border-radius: 0;
+    background-color: #000;
+    /* height: 98%; */
+    padding: 0;
+    border: 5px solid transparent;
+    border-image: url(../images/PlayerBoarderl.png) 30 round;
+}
+
+.displayVideoBox .displayVideo img {
+    height: 100%;
+}
+
+.todayList {
+    padding: 0.5rem 1rem !important;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.04);
+    /*border-radius: 16px;*/
+    /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
+    box-shadow: 0 0.3rem 0.8rem rgb(0 0 0 / 12%);
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+    border: 1px solid rgba(255, 255, 255, 0.61);
+    background-color: rgb(0 0 0 / 20%);
+    background-clip: border-box;
+}
+
+/* .card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: rgb(0 0 0 / 20%);
+    background-clip: border-box;
+    border: 0 solid transparent;
+    border-radius: 0.25rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 0.3rem 0.8rem rgb(0 0 0 / 12%);
+} */
+.buttonPadding {
+    padding: 0rem 0rem !important;
+    border-radius: 2px !important;
+}
+
+.todayList .videoItem:nth-child(1) {
+    padding-right: 5px;
+}
+
+.todayList .videoItem:nth-child(2) {
+    padding-left: 5px;
+}
+
+.todayList .videoItem .videoImg img {
+    height: 220px;
+}
+
+.todayList>.videoItem:nth-child(1) .aboutVideo {
+    width: 98.7%;
+}
+
+.todayList>.videoItem:nth-child(2) .aboutVideo {
+    left: 5px;
+    width: 98.7%;
+}
+
+
+
+.todayList .moreVideos {
+    background-color: transparent;
+}
+
+.todayList .moreVideos .videoItem {
+    padding: 0px;
+}
+
+.todayList .moreVideos .videoItem .videoImg img {
+    height: 150px;
+    width: 100%;
+}
+
+@media only screen and (max-width:750px) {
+    .sideVideos .videoItem .videoImg img {
+        height: 170px;
+        width: 100%;
+    }
+
+    .displayVideoBox {
+        padding: 0 !important;
+    }
+
+    .todayList {
+        padding: 10px !important;
+    }
+
+    .todayList .videoItem {
+        padding: 0 !important;
+    }
+
+    .todayList .videoItem:nth-child(1) .aboutVideo {
+        width: 100%;
+    }
+
+    .todayList .videoItem:nth-child(2) .aboutVideo {
+        left: 0px;
+        width: 100%;
+    }
+
+    .todayList .moreVideos .videoItem .videoImg img {
+        height: 170px;
+    }
+}
+
+/*profile page*/
+
+
+/*  profile page */
+.profileBox {
+    border: 5px solid transparent;
+    border-image: url(../images/PlayerBoarderl.png) 30 round;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 10px 25px 10px 10px;
+}
+
+.profileBox .profileHeadeing {
+    color: #fff;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.profileBox .UserImgBox .UserImg {
+    width: 100%;
+    height: 95%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.profileBox .UserImgBox .UserImg img {
+    width: 90%;
+}
+
+.proFileBox .bioTextBox {
+    width: 100%;
+    position: relative;
+}
+
+.proFileBox .bioTextBox .textArea {
+    width: 100%;
+    max-height: 500px;
+}
+
+.reSpaceBox {
+    background-color: transparent;
+    padding: 30px 15px;
+    border-radius: 0;
+}
+
+.reSpaceBox .reSpace {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 0;
+}
+
+.profileVideoes {
+    background-color: transparent;
+}
+
+.profileVideoes .profileVideoesItems {
+    padding: 0 !important;
+    position: relative;
+    margin-top: 5px;
+}
+
+.profileVideoes .profileVideoesItems .aboutVideo {
+    position: absolute;
+    width: 100%;
+    text-align: left;
+    color: #fff;
+    font-size: 18px;
+    left: 0;
+    top: 0;
+    border-radius: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 0;
+}
+
+.profileVideoes .profileVideoesItems .aboutVideo img {
+    height: 22px;
+    margin: 0 5px;
+}
+
+.profileVideoes .profileVideoesItems .videoImg {
+    border-radius: 0;
+}
+
+.profileVideoes .profileVideoesItems .videoImg img {
+    height: 100px;
+    width: 100%;
+}
+
+.bioTextBox textarea::placeholder {
+    color: #000;
+}
+
+@media only screen and (max-width:750px) {
+    .proFileBox {
+        display: block;
+        height: 100%;
+        width: 100%;
+        margin: auto;
+        padding: 0;
+    }
+
+    .proFileBox .UserImg img {
+        display: block;
+        margin: auto;
+        width: 60%;
+    }
+
+    .proFileBox .profileBio {
+        padding: 15px 15px;
+        display: block;
+        margin: auto;
+    }
+
+    .profileVideoes .profileVideoesItems .videoImg img {
+        height: 190px;
+        width: 100%;
+    }
+
+    .bioTextBox {
+        width: 100%;
+        padding-left: 23px;
+        padding-right: 15px;
+    }
+
+    .bioTextBox textarea {
+        margin: 15px 0;
+        width: 100%;
+    }
+
+    .profileBox .UserImgBox .UserImg {
+        padding-left: 10px;
+        margin-top: 2px;
+    }
+
+    .profileBox .UserImgBox .UserImg img {
+        width: 90%;
+    }
+
+    .profileBox .profileHeadeing {
+        margin-left: 15px;
+        font-size: 20px;
+    }
+
+    .reSpaceBox .reSpace {
+        padding: 55px;
+        height: 200px;
+    }
+}
+
+
+/* start sarfaraz 21-03-2022*/
+
+.PlayerBox {
+    background-color: transparent;
+    border-radius: 0;
+    margin: 0;
+}
+
+.PlayerBox .playerImage {
+    border-radius: 0;
+    background-color: #004d73;
+    height: 100%;
+    padding: 0;
+    border: 5px solid transparent;
+    border-image: url(../images/PlayerBoarderl.png) 30 round;
+}
+
+.PlayerBox .playerImage img {
+    height: 100%;
+}
+
+.pr-0 {
+    padding-right: 0 !important;
+}
+
+.leftBox {
+    padding-left: 0 !important;
+    border-left: solid #81cfe6 4px;
+    background-color: #50175c;
+    width: 24% !important;
+}
+
+.row2-FirstBox {
+    /* height: 150px; */
+}
+
+.row2-FirstBox1 {
+    height: 80px;
+    border-right: solid #0a5862 4px;
+    font-size: 20px;
+    color: white;
+
+}
+
+.row2-FirstBox2 {
+    height: 85px;
+    border-right: solid #0a5862 4px;
+
+}
+
+.row2-FirstBox2 img {
+    width: 100%;
+}
+
+.nowPlaylist {
+    width: 152px;
+    height: 35px;
+    background: #3e3e3e !important;
+}
+
+.myPlaylist {
+    width: 130px;
+    height: 35px;
+    background: #3e3e3e !important;
+}
+
+.Panelright {
+    height: 70px;
+}
+
+.Panelright img {
+    width: 100%;
+}
+
+.Panelright-right {
+    font-size: 10px;
+    text-align: left;
+    height: 90%;
+}
+
+.Panel-rightLogo img {
+    height: 35px !important;
+    width: 100%;
+    margin-right: 25px;
+}
+
+.Panel-rightLogo {
+    padding-top: 20px;
+}
+
+.panel-right-col {
+    margin-left: 3px !important;
+}
+
+.LastCol {
+    margin-left: 3px !important;
+    border: solid -1px #0a5862;
+    /* width :98%; */
+}
+
+.LastCol-LastChild {
+    width: 17.83% !important;
+}
+
+.LastCol-LastChild6 {
+    width: 10.80% !important;
+}
+
+.MoreMix {
+
+    height: 48% !important;
+    font-size: 14px;
+    margin-left: 0 !important;
+    font-weight: bolder;
+    margin: 3px;
+}
+
+.Mix {
+    height: 75% !important;
+}
+
+.mtmix-2 {
+    margin-top: 0.7rem !important;
+}
+
+.lastWidth {
+    width: 76% !important;
+}
+
+.lastWidth2 {
+    width: 24% !important;
+
+}
+
+.marginTop-3 {
+    margin-top: 1rem !important;
+    height: 16%;
+}
+
+@media only screen and (max-width: 750px) {
+    .leftBox {
+        width: 100% !important;
+    }
+
+    .PlayerBox .playerImage {
+        padding: 12px;
+    }
+
+    .mainImage {
+        padding: 0 !important;
+    }
+
+    .col-md-6 {
+        width: unset !important;
+        padding: 13px !important;
+        /* margin-left: 8px; */
+    }
+
+    .nowPlaylist {
+        width: 160px;
+        margin-top: 2px;
+    }
+
+    .myPlaylist {
+        width: 145px;
+        margin-top: 2px;
+    }
+
+    .Panelright-right {
+        width: 71% !important;
+        margin: 0;
+        height: auto;
+    }
+
+    .marginTop-3 {
+        margin-top: 0.5rem !important;
+    }
+
+    .Panelright {
+        width: 25% !important;
+        /* height: 90%!important; */
+    }
+}
+
+/* end sarfaraz 21-03-2022*/
+
+.setImage img {
+    height: 150px;
+}

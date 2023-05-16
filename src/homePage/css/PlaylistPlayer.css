@@ -1,0 +1,137 @@
+.creator_PlaylistPlayer {
+  display: flex;
+  flex-direction: row;
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 0.25rem;
+  overflow: hidden;
+}
+.creator_PlaylistPlayer__main {
+  width: 75%;
+}
+.creator_PlaylistPlayer__sidebar {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+}
+.creator_PlaylistPlayer__player-wrapper {
+  position: relative;
+  padding-top: 56.25%;
+  border: 5px solid transparent;
+  border-image: url(../../asset/images/PlayerBoarderl.png) 30 round;
+ /* Player ratio: 100 / (1280 / 720) */
+}
+.creator_PlaylistPlayer__player {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.creator_PlaylistPlayer__infobar {
+  display: flex;
+  flex-direction: row;
+}
+.creator_PlaylistPlayer__main .creator_PlaylistPlayer__reserved {
+  width: 65%;
+  background: rgba(0, 0, 0, 0.05);
+}
+.creator_PlaylistPlayer__sidebar .creator_PlaylistPlayer__reserved {
+  flex: 1;
+  background: rgba(0, 0, 0, 0.05);
+}
+.creator_PlaylistPlayer__badge {
+  width: 35%;
+  padding: 0.5rem;
+}
+.creator_PlaylistPlayer__playlists {
+  white-space: nowrap;
+  height:20rem;
+  overflow-y: auto;
+}
+.creator_PlaylistPlayer__playlists::-webkit-scrollbar
+{
+   display:none;
+}
+.creator_PlaylistPlayer__menu {
+  height: 18rem;
+  overflow-y: auto;
+  border-radius: 0;
+}
+.creator_PlaylistPlayer__menu::-webkit-scrollbar
+{
+   display:none;
+}
+.creator_PlaylistPlayer__logo {
+  padding: 0.5rem;
+}
+.creator_PlaylistPlayer__logo img {
+  width: 100%;
+}
+.creator_VideoBadge {
+  display: flex;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.9);
+}
+.playlistEdit .creator_VideoBadge
+{
+  border-bottom: 3px solid transparent;
+  border-image: url(../../asset/images/RowBreak.png) 15 round;
+}
+.creator_VideoBadge:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+.userUploadVideo .creator_VideoBadge 
+{
+    padding-left: 28px;
+}
+.creator_VideoBadge .creator_VideoBadge__info .info{
+  width:90%;
+  overflow: auto;
+}
+.creator_VideoBadge .creator_VideoBadge__info .info::-webkit-scrollbar
+{
+  display: none;
+}
+.userUploadVideo .creator_VideoBadge .creator_VideoBadge__info .info{
+   width:100%;
+}
+.creator_VideoBadge--clickable {
+  cursor: pointer;
+}
+.creator_VideoBadge--clickable:hover {
+  background: rgba(0, 0, 0, 0.7);
+}
+.creator_VideoBadge--active, .creator_VideoBadge--active:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+.creator_VideoBadge__logo 
+{
+  flex-shrink: 0;
+  width:5.8rem;
+  height:5.9rem;
+  background-size: cover;
+  background-position: center;
+}
+.creator_VideoBadge__info {
+  overflow: hidden;
+}
+.creator_VideoBadge__title {
+  font-weight: 600;
+}
+.creator_PlaylistButton {
+  padding: 0.2rem;
+  background: rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+  font-weight: 600;
+  height:100%;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+.creator_PlaylistButton::-webkit-scrollbar
+{
+   display: none;
+}
+.creator_PlaylistButton:hover {
+  background: rgba(0, 0, 0, 0.7);
+}
+.creator_PlaylistButton--active, .creator_PlaylistButton--active:hover {
+  background: rgba(0, 0, 0, 0.15);
+}

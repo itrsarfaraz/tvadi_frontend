@@ -1,0 +1,89 @@
+body {
+    background-image: url(../../asset/images/background4.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    background-attachment:fixed;
+}
+
+header {
+    width: 100%;
+    height: 55px;
+    display: flex;
+    /* background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.83) 40%, transparent); */
+    z-index: 999;
+    border-bottom: solid rgba(229, 217, 217, 0.352) 1px;
+}
+
+header div {
+    margin: auto;
+    width: 27%;
+    height: 100%;
+    /* padding: 10px 10px; */
+}
+
+
+@media only screen and (max-width:450px) {
+    header div {
+        width: unset;
+    }
+}
+
+header div .img_link img {
+    width: 42px;
+    margin: 6px 10px -28px 0px;
+    cursor: pointer;
+}
+
+header .main-logo {
+    justify-content: center;
+    align-items: top;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+header .main-logo .img_link img {
+    width: 148px;
+    margin: -16px;
+}
+
+header .user-menu-logo {
+    justify-content: right;
+    align-items: right;
+    display: flex;
+}
+
+.hidden {
+    display: none;
+}
+
+.dropDown {
+    position: absolute;
+    left: -188px;
+    top: 40px;
+    border: 5px solid transparent;
+    border-image: url(../images/PlayerBoarderl.png) 30 round;
+    margin: 20px auto 200px auto;
+    width: 242px;
+    z-index: 99;
+    background: rgba(0, 0, 0, 0.9);
+    color: #fff;
+}
+
+.dropDown .navLink {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 0;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.dropDown .navLink:hover {
+    background: -webkit-linear-gradient(#F225F4,#676BE0,#A0FFFF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

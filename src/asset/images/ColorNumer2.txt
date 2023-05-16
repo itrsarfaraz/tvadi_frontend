@@ -1,0 +1,27 @@
+
+
+Body block containing all but 2 side icons, profile and TV/PL - just black# 000000  at 30% transparent. 
+
+
+Black fade at top can be a CSS repeat slice
+
+Playlist blocks black# 000000  at 50% transparent
+
+
+
+Log in blocks black# 000000  at 50% transparent
+
+Log in button border # 8103e4
+Log in button fill # 001b5b
+
+Font  https://www.fontspace.com/a-astro-space-font-f46028 
+
+
+Can use CSS to expand/ streach the box (PlayerBoarderl.png) with same color cell fill, will have to cut up the box into table cells.  
+
+
+
+
+
+
+

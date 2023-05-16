@@ -1,0 +1,37 @@
+/* .creator_App {
+  background: #eee;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}
+.creatot_App__player {
+  width: 50rem;
+} */
+
+/* app css */
+.App {
+  background: #eee;
+  height: 100%;
+  width:100%;
+  display: flex;
+  /* align-items: center; */
+  /* justify-content: center; */
+  font-size: 14px;
+  margin-top:-30px;
+  background-color: transparent;
+  border: 8px solid transparent;
+  border-image: url(../../asset/images/PlayerBoarderl.png) 30 round;
+  padding:0 13px;
+  z-index: 1100;
+}
+@media only screen and (max-width:992px)
+{   
+  .App {
+          margin-top:-110px;
+  }
+}
+.App__player {
+  width: 100%;
+}
